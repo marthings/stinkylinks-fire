@@ -1,0 +1,14 @@
+{{#if session.isAuthenticated}}
+<h2>New Link</h2>
+<ul class="post-publish">
+  <li>
+    {{input value=title placeholder="Title"}}
+  </li>
+  <li>
+    {{textarea value=description placeholder="Description"}}
+  </li>
+  <li>
+    <button {{action "publishPost"}}>Publish</button>
+  </li>
+</ul>
+{{/if}}
