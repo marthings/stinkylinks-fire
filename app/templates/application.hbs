@@ -1,11 +1,9 @@
 {{#if session.isAuthenticated}}
   Logged in as {{session.currentUser.displayName}}
   <button {{action "logout"}}>Sign out</button>
-  {{outlet}}
-{{else}}
-  <button {{action "login" "google"}}>Sign in with Google</button>
 {{/if}}
 
+{{outlet}}
 <section>
 {{#each model as |post|}}
   <div>{{post.title}}</div>

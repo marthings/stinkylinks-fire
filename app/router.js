@@ -9,7 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('links');
   this.route('signup');
-  this.route('private', { path: ':user_id' });
+  this.route('signin');
+  this.route('user', { path: ':user_id' });
 });
 
 export default Router;
